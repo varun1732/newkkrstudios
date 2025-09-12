@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .profile-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .profile-row .label { color: var(--muted); }
+        .profile-row:last-child { border-bottom: 0; }
+    </style>
+    </head>
+<body>
+    <header class="site-header">
+        <div class="brand">KKR STUDIOS — Profile</div>
+        <nav>
+            <a href="index.html" class="btn">Home</a>
+            <button id="logoutBtn" class="btn" style="margin-left:8px;">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="auth-card" style="max-width:520px; width:100%;">
+            <h1>Your Profile</h1>
+            <p class="subtitle">Basic information associated with your account.</p>
+
+            <div class="profile-row"><div class="label">Full Name</div><div id="profileName">-</div></div>
+            <div class="profile-row"><div class="label">Email</div><div id="profileEmail">-</div></div>
+
+            <h2 style="margin-top:16px; font-size:18px;">Your Bookings</h2>
+            <p class="subtitle">Previously booked events linked to your email.</p>
+            <div id="profileBookings" style="margin-top:8px;"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

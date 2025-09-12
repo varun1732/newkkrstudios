@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-card">
+            <h1>Create account</h1>
+            <p class="subtitle">Join us in a minute</p>
+
+            <form id="registerForm" novalidate>
+                <div class="form-group">
+                    <label for="regUsername">Full Name</label>
+                    <input type="text" id="regUsername" name="fullName" required placeholder="Your full name" minlength="3" maxlength="40">
+                    <small class="error" id="regUsernameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" name="email" required placeholder="name@example.com">
+                    <small class="error" id="regEmailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" name="password" required placeholder="Create a password" minlength="6">
+                    <small class="error" id="regPasswordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="regConfirmPassword">Confirm Password</label>
+                    <input type="password" id="regConfirmPassword" name="confirmPassword" required placeholder="Re-enter your password" minlength="6">
+                    <small class="error" id="regConfirmPasswordError"></small>
+                </div>
+
+                <button type="submit" class="btn primary">Register</button>
+            </form>
+
+            <p class="alt-action">
+                Already have an account?
+                <a href="login.html">Sign in</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

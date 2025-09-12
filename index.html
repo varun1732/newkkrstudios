@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+            <button id="menuBtn" class="btn" aria-label="Open menu">☰</button>
+            <div class="brand">KKR STUDIOS</div>
+        </div>
+        <nav>
+            <button id="logoutBtn" class="btn" style="margin-left:8px;">Logout</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="home-card" style="max-width:1120px; width:100%;">
+            <div class="slider" id="heroSlider">
+                <div class="slides">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2000&auto=format&fit=crop" alt="Elegant venue lighting">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2000&auto=format&fit=crop" alt="Birthday celebration setup">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2000&auto=format&fit=crop" alt="Anniversary romantic decor">
+                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=2000&auto=format&fit=crop" alt="Cake and candles detail">
+                </div>
+                <button class="nav prev" aria-label="Previous">‹</button>
+                <button class="nav next" aria-label="Next">›</button>
+                <div class="dots"></div>
+            </div>
+            <div style="display:flex; justify-content:center; margin: 14px 0 20px;">
+                <a href="booking.html" class="btn primary">Book Now</a>
+            </div>
+            <div id="productGrid" class="product-grid"></div>
+        </div>
+    </main>
+
+    <aside id="cartDrawer" class="cart-drawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart" class="btn">Close</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+            <div class="cart-actions">
+                <button id="checkoutBtn" class="btn primary">Checkout</button>
+                <button id="emptyCartBtn" class="btn">Empty Cart</button>
+            </div>
+        </div>
+    </aside>
+
+    <aside id="sideMenu" class="side-menu" aria-hidden="true">
+        <div class="side-menu-header">
+            <strong>Menu</strong>
+            <button id="closeMenu" class="btn" aria-label="Close menu">Close</button>
+        </div>
+        <nav class="side-menu-list">
+            <a href="#" id="menuProfile" class="side-link">Your Profile</a>
+            <a href="#" id="menuCancel" class="side-link">Cancel Booking</a>
+            <a href="#" id="menuHelp" class="side-link">Help</a>
+            <a href="#" id="menuAbout" class="side-link">About</a>
+        </nav>
+    </aside>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <div class="footer-label">Contact</div>
+                <div>+91 98765 43210</div>
+            </div>
+            <div>
+                <div class="footer-label">Email</div>
+                <div>support@kkrstudios.example</div>
+            </div>
+            <div>
+                <div class="footer-label">Address</div>
+                <div>KKR Studios, 2nd Floor, Main Street, Chennai 600001</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

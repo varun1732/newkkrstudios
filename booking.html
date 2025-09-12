@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">KKR STUDIOS — Booking</div>
+        <nav>
+            <a href="index.html" class="btn">Back</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="auth-card" style="max-width:520px; width:100%;">
+            <h1 style="margin-bottom: 8px;">Plan your event</h1>
+            <p class="subtitle">Select an occasion and preferred date/time</p>
+
+            <form id="bookingForm" novalidate>
+                <div class="form-group">
+                    <label>Occasion</label>
+                    <div class="option-grid" id="occasionOptions">
+                        <input type="radio" id="occ-birthday" name="occasion" value="Birthday Celebration" hidden>
+                        <label for="occ-birthday" class="option-card">
+                            <span class="text">Birthday Celebration</span>
+                        </label>
+
+                        <input type="radio" id="occ-anniversary" name="occasion" value="Anniversary Celebration" hidden>
+                        <label for="occ-anniversary" class="option-card">
+                            <span class="text">Anniversary Celebration</span>
+                        </label>
+
+                        <input type="radio" id="occ-bride" name="occasion" value="Bride-to-be" hidden>
+                        <label for="occ-bride" class="option-card">
+                            <span class="text">Bride-to-be</span>
+                        </label>
+
+                        <input type="radio" id="occ-office" name="occasion" value="Office Meetings" hidden>
+                        <label for="occ-office" class="option-card">
+                            <span class="text">Office Meetings</span>
+                        </label>
+                    </div>
+                    <small class="error" id="occasionError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>KKR Events Packages</label>
+                    <div class="package-grid">
+                        <input type="radio" id="pkg-499" name="package" value="PACKAGE 499 (1 HR)" hidden>
+                        <label for="pkg-499" class="package-card">
+                            <div class="package-head">
+                                <div class="title">PACKAGE 499 <span class="muted">(1 HR)</span></div>
+                                <div class="price">₹499</div>
+                            </div>
+                            <ul class="package-details">
+                                <li>Decoration with lights</li>
+                            </ul>
+                            <div class="package-actions">
+                                <button type="button" class="btn view-btn">Package Details</button>
+                            </div>
+                        </label>
+
+                        <input type="radio" id="pkg-699" name="package" value="PACKAGE 699 (1 HR)" hidden>
+                        <label for="pkg-699" class="package-card">
+                            <div class="package-head">
+                                <div class="title">PACKAGE 699 <span class="muted">(1 HR)</span></div>
+                                <div class="price">₹699</div>
+                            </div>
+                            <ul class="package-details">
+                                <li>Decoration with lights</li>
+                                <li>½ KG normal cake</li>
+                            </ul>
+                            <div class="package-actions">
+                                <button type="button" class="btn view-btn">Package Details</button>
+                            </div>
+                        </label>
+
+                        <input type="radio" id="pkg-999" name="package" value="PACKAGE 999 (1 HR)" hidden>
+                        <label for="pkg-999" class="package-card">
+                            <div class="package-head">
+                                <div class="title">PACKAGE 999 <span class="muted">(1 HR)</span></div>
+                                <div class="price">₹999</div>
+                            </div>
+                            <ul class="package-details">
+                                <li>Decoration with lights</li>
+                                <li>½ KG ice cake</li>
+                                <li>LED naming letters</li>
+                                <li>Projector with music</li>
+                            </ul>
+                            <div class="package-actions">
+                                <button type="button" class="btn view-btn">Package Details</button>
+                            </div>
+                        </label>
+
+                        <input type="radio" id="pkg-1699" name="package" value="PACKAGE 1699 (1 HR)" hidden>
+                        <label for="pkg-1699" class="package-card">
+                            <div class="package-head">
+                                <div class="title">PACKAGE 1699 <span class="muted">(1 HR)</span></div>
+                                <div class="price">₹1699</div>
+                            </div>
+                            <ul class="package-details">
+                                <li>Decoration with lights</li>
+                                <li>½ KG ice cake</li>
+                                <li>LED naming letters</li>
+                                <li>Projector with music</li>
+                                <li>Photos (without edit) & 1 min video with edit</li>
+                            </ul>
+                            <div class="package-actions">
+                                <button type="button" class="btn view-btn">Package Details</button>
+                            </div>
+                        </label>
+
+                        <input type="radio" id="pkg-2699" name="package" value="PACKAGE 2699 (2 HR)" hidden>
+                        <label for="pkg-2699" class="package-card">
+                            <div class="package-head">
+                                <div class="title">PACKAGE 2699 <span class="muted">(2 HR)</span></div>
+                                <div class="price">₹2699</div>
+                            </div>
+                            <ul class="package-details">
+                                <li>Decoration with lights</li>
+                                <li>½ KG ice cake</li>
+                                <li>LED naming letters</li>
+                                <li>Projector with music</li>
+                                <li>Photos & 1 min video with edit</li>
+                                <li>Fog entry</li>
+                            </ul>
+                            <div class="package-actions">
+                                <button type="button" class="btn view-btn">Package Details</button>
+                            </div>
+                        </label>
+                    </div>
+                    <small class="error" id="packageError"></small>
+                </div>
+
+                
+
+                <button type="submit" id="bookingSubmit" class="btn primary" disabled>Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

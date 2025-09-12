@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">KKR STUDIOS — Booking Details</div>
+        <nav>
+            <a href="booking.html" class="btn">Back</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="auth-card" style="max-width:520px; width:100%;">
+            <h1 style="margin-bottom: 8px;">Enter your details</h1>
+            <p class="subtitle" id="selectionSummary"></p>
+
+            <form id="detailsForm" novalidate>
+                <div class="form-group">
+                    <label for="custName">Name</label>
+                    <input type="text" id="custName" required placeholder="Your name">
+                    <small class="error" id="custNameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="custMobile">Mobile number</label>
+                    <input type="tel" id="custMobile" required placeholder="10-digit mobile">
+                    <small class="error" id="custMobileError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="custEmail">Email</label>
+                    <input type="email" id="custEmail" required placeholder="name@example.com">
+                    <small class="error" id="custEmailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="custDate">Date</label>
+                    <input type="date" id="custDate" required>
+                    <small class="error" id="custDateError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Time Slot</label>
+                    <div class="slot-grid" id="slotGrid"></div>
+                    <small class="error" id="slotError"></small>
+                </div>
+
+                <button type="submit" class="btn primary">Confirm</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
